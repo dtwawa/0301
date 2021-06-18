@@ -16,12 +16,12 @@ cron "11 9 * * *" script-path=https://raw.githubusercontent.com/yangtingxiao/Qua
  */
 const $ = new Env('京东排行榜');
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('./pt_key=AAJgxK25ADBs4otUzBf-5_Xaf2CfLzv9IK6P5n-s4QI4sLt1OeAnWINvhhhRfuSNhyC8T_gnzOw;pt_pin=jd_4ce9656e04a0e;') : '';
 const needSum = false;     //是否需要显示汇总
 const STRSPLIT = "|";
 let merge = {}
 //IOS等用户直接用NobyDa的jd cookie
-let cookiesArr = [], cookie = 'pt_key=AAJgxK25ADBs4otUzBf-5_Xaf2CfLzv9IK6P5n-s4QI4sLt1OeAnWINvhhhRfuSNhyC8T_gnzOw;pt_pin=jd_4ce9656e04a0e;';
+let cookiesArr = [], cookie = '';
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
     cookiesArr.push(jdCookieNode[item])
