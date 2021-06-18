@@ -22,7 +22,7 @@ const STRSPLIT = "|";
 let merge = {}
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '';
-const JD_API_HOST = `https://api.m.jd.com/client.action`;
+const JD_API_HOST = `https://api.m.jd.com/client.action?functionId=`;
 !(async () => {
   await requireConfig()
   if (!cookiesArr[0]) {
