@@ -40,7 +40,7 @@ cron:30 1 6-31/2,31 1 *
 let guaopencard_addSku = "false"
 let guaopencard = "true"
 let guaopenwait = "0"
-let guaopencard_draw = "0"
+let guaopencard_draw = "3"
 
 const $ = new Env('1.6～1.31 会员狂欢日');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
